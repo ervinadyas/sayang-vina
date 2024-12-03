@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .container {
+    margin-top: 50px;
+  }
+  .login-box, .profile-box, .message-box, .sticker-box {
+    display: none;
+  }
+  .login-box.active, .profile-box.active, .message-box.active, .sticker-box.active {
+    display: block;
+  }
+  img.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Umum */
+.hidden {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .profile-box {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .profile-photo:hover {
+    border-color: #f39c12; /* Warna kuning ketika di-hover */
+  }
+  
+  .profile-info h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    background-color: #555;
+  }
+  
+  .empty-post {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #aaa;
+  }
+  /* Gaya untuk foto interaksi dan stiker */
+.interaction-photo, .sticker-photo {
+    display: block;
+    width: 150px; /* Atur ukuran gambar */
+    height: auto;
+    margin: 0 auto 20px; /* Tengah dengan margin bawah */
+    border-radius: 10px; /* Memberikan sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+  }
+  
+  .message-box, .sticker-box {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .message-box p, .sticker-box p {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  /* Gaya untuk ikon musik */
+.music-icon {
+  display: inline-block;
+  font-size: 24px;
+  color: #007BFF;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.music-icon:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.profile-info iframe {
+    margin-top: 10px;
+    width: 100%; /* Agar sesuai dengan lebar profil */
+    max-width: 300px; /* Batas maksimum lebar */
+    border: none;
+  }
+  .sticker-photo-container {
+    display: flex; /* Menyusun gambar dalam satu baris */
+    gap: 10px; /* Jarak antar gambar */
+  }
+  
+  .sticker-photo {
+    width: 100px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: auto;
+  }
+  .sticker-photo:hover {
+    transform: scale(1.05); /* Membesarkan sedikit */
+  }
+  /* Foto di halaman final */
+.final-photo {
+    width: 200px;  /* Atur ukuran foto sesuai kebutuhan */
+    height: auto;   /* Sesuaikan tinggi gambar secara otomatis */
+    border-radius: 0; /* Tidak ada border-radius, gambar tetap berbentuk kotak */
+    border-radius: 10px; /* Membuat sudut foto melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    transition: transform 0.3s ease;
+  }
+
+  .final-photo:hover {
+    transform: scale(1.05); /* Membesarkan sedikit */
+  }
+  
+ /* Foto Tambahan Berbentuk Persegi Panjang */
+.additional-photo {
+    width: 270px;
+    height: 70px;
+    cursor: pointer; /* Menunjukkan ikon tangan saat hover */
+    border: 3px solid #ccc;
+    object-fit: cover;
+    transition: transform 0.2s ease; /* Efek transisi */
+  }
+  
+  /* Efek saat foto di-hover */
+  .additional-photo:hover {
+    transform: scale(1.05); /* Membesarkan sedikit */
+  }
+  
+  /* Gaya untuk tombol Next */
+.next-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .next-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Gaya untuk Galeri Foto (Horizontal) */
+.photo-grid {
+    display: flex;
+    flex-wrap: nowrap;  /* Mengatur agar foto berjajar dalam satu baris */
+    gap: 15px; /* Jarak antar foto */
+    padding: 20px;
+    overflow-x: auto;  /* Agar bisa digulir ke kanan jika foto lebih dari satu layar */
+  }
+  
+  .gallery-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; /* Membuat sudut foto melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-photo:hover {
+    transform: scale(1.05); /* Membesarkan foto saat hover */
+  }
+  

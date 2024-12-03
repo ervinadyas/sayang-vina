@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Cinta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Halaman Login -->
+    <div class="login-box active" id="loginBox">
+      <h1>Login</h1>
+      <input type="text" id="name" placeholder="Masukkan Nama"><br><br>
+      <input type="password" id="password" placeholder="Masukkan Password"><br><br>
+      <button onclick="goToProfile()">Login</button>
+    </div>
+    
+
+   <!-- Halaman Profil -->
+<div class="profile-box hidden" id="profileBox">
+    <div class="profile-header">
+      <img src="images/ervin.JPG" alt="Foto Profil" class="profile-photo" onclick="goToInteraction()">
+      <div class="profile-info">
+        <h2 id="profileName">ervina.dyas</h2>
+        
+        <!-- Foto Tambahan -->
+<img src="assets/sportify.jpg" alt="Foto Tambahan" class="additional-photo" onclick="playMusic()">
+<audio id="additionalMusic" loop>
+    <source src="audio/music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+        
+      </div>
+    </div>
+    <p class="status">hallo sayangku cintaku gantengku😚</p>
+    <p class="status">play musik dulu dongs, btw</p>
+    <p class="status">buka statusku klik di profil sayang☺️</p>
+    <!-- Link Instagram -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/irhamrobit?igsh=YW5yNWtkNDU0eWY0" target="_blank" class="instagram-link">
+          <button>Follow</button>
+        </a>
+      </div> 
+    <div class="empty-post">
+      <p>Akun ini Privat</p>
+    </div>
+  </div>
+  
+  
+  
+<!-- Halaman Interaksi -->
+<div class="message-box hidden" id="interactionBox">
+    <img src="assets/mecucu.webp" alt="Foto Interaksi" class="interaction-photo">
+    <p>Sayang masih ngambek ya?</p>
+    <button onclick="goToNo()">iya</button>
+    <button onclick="goToYes()">ngga</button>
+    <audio autoplay loop>
+        <source src="audio/music.mp3" type="audio/mp3">
+  </div>
+  
+  <!-- Halaman Tidak -->
+  <div class="sticker-box hidden" id="noBox">
+    <img src="assets/vin1.jpeg" alt="Foto Maaf" class="sticker-photo">
+    <p>Yahh😭 jangan marah terus ya sayangg,</p>
+    <p>Vina minta maaf, baikan ya sayangg🥺</p>
+    <p>vina mau kasi tau sesuatu</p>
+    <button onclick="goToFinal()">Lanjut</button>
+  </div>
+  
+  <!-- Halaman Ya -->
+<div class="sticker-box hidden" id="yesBox">
+    <div class="sticker-photo-container">
+      <img src="assets/vin2.jpeg" alt="Foto Bahagia" class="sticker-photo">
+      
+    </div>
+    <p>Yess, udah ga ngambek lagi😎 </p>
+    <p>Makasihh ya sayang, iloveyouu 🫶🏻🫶🏻</p>
+    <p>vina seneng deh, tau ngga sayang😚</p>
+    <img src="assets/vina2.jpeg" alt="Foto Bahagia" class="sticker-photo">
+    <button onclick="goToFinal()">Lanjut</button>
+  </div>
+  
+  
+
+    <!-- Halaman Final -->
+    <div class="sticker-box" id="finalBox">
+        <img src="assets/bit1.jpeg" alt="Foto Cinta" class="final-photo">
+      <p>Sampean tau ngga vina sayang banget sama orang ini</p>
+      <p>vina suka semua tentang dia, vina suka banget kalo dia marahin vina</p>
+      <p>ngomelin vina, nunjukin kalo dia juga sayang sama vina☺️</p>
+      <p>vina suka kalo dia ingetin vina makan 🥰, dan vina suka</p>
+      <p>kalo dia slalu semangatin vina dalam segala hal</p>
+      <p>vina suka denger suaranya, kerandomannya, tawanya yang selalu</p>
+      <p>bikin vina tenang, vina suka semua tentangmu sayangg🥹</p>
+      <img src="assets/bit3.jpeg" alt="Foto Cinta" class="final-photo">
+      <p>vina bener-bener sayang sama sampean, vina gamau kehilangan</p>
+      <p>orang yg vina sayang kesekian kalinya, vina gamau sampean pergi</p>
+      <p>vina gamau sampean hilang tanpa kabar, vina gamau lost contact🥺</p>
+      <p>vina gamau di diemin lama-lama sayang😭</p>
+      <img src="assets/vin3.jpeg" alt="Foto Cinta" class="final-photo">
+      <p>maafin vina slalu buat masalah, slalu buat sampean keselkesel🥺</p>
+      <p>maaf grgr vina kita jadi sering berantem🥺, tapi masalah apapun</p>
+      <p>yg terjadi vina mohon jangan pergi ya🥺 vina tau ko vina salah</p>
+      <p>vina belum bisa ngertiin maunya sampean, vina belum bisa jadi</p>
+      <p>yg terbaik buat sampean, vina minta maaf😢 </p>
+      <img src="assets/bit4.jpeg" alt="Foto Cinta" class="final-photo">
+      <p>jujur vina bersyukur dengan apa yg semua sampean kasih ke vina</p>
+      <p>dari cara sampean ngetreat vina, semua yang sampean kasih ke vina</p>
+      <p>tapi sebaliknya, vina slalu buat sampean kecewa ya?🥺</p>
+      <p>pokoknya vina minta maaf lagi dan lagi sama ayang. makasih</p>
+      <p>udah slalu ada buat vina, brusaha buat vina bahagia🥰</p>
+      <img src="assets/vin5.jpeg" alt="Foto Cinta" class="final-photo">
+      <p>vina gamau sampean pergi dan vina ga ikhlas kalo sampean</p>
+      <p>beneran pergi, vina janji brusaha jadi lebih baik lagi sayang</p>
+      <p>vina janji brusaha jadi apa yng sampean mau🥺, tapi temenin</p>
+      <p>vina ya sayangg, bimbing vina, jngan bosan bilangin vina🥺</p>
+      <img src="assets/bit.jpeg" alt="Foto Cinta" class="final-photo">
+      <p>have a nice day ya sayang🥰, semangat buat hari ini,</p>
+      <p>gimanapun keadaanya insyaallah vina bakalan tetep ada buat</p>
+      <p>sampean, kabarin vina kalo ayang ga sibuk☺️ udah ya marahnya sayangg😘</p>
+      <img src="assets/ciumni.webp" alt="Foto Cinta" class="final-photo">
+
+<!-- Halaman Foto Kotak -->
+<div class="photo-grid hidden" id="photoGridPage">
+    <div class="photo-grid">
+        <img src="assets/muah.webp" alt="Foto 1" class="gallery-photo">
+        <img src="assets/vin6.jpeg" alt="Foto 2" class="gallery-photo">
+        <img src="assets/vin7.jpeg" alt="Foto 3" class="gallery-photo">
+        <img src="assets/ervin1.jpeg" alt="Foto 4" class="gallery-photo">
+        <img src="assets/vin4.jpeg" alt="Foto 5" class="gallery-photo">
+        <img src="assets/vin1.jpeg" alt="Foto 6" class="gallery-photo">
+    </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
